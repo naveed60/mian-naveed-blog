@@ -1,3 +1,14 @@
 .navbar{
   background-color:#00D1B2;
 }
+.scroll-none{
+  overflow-x: hidden !important;
+}
+
+/* app/assets/stylesheets/custom.css */
+body {
+  background-image: url('/assets/bg1.jpg'); /* Replace 'background.jpg' with the actual filename of your background image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position-x: left;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
