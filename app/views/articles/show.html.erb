@@ -1,4 +1,11 @@
-<div class= "col-lg-10 mx-auto">
+<div class= "col-lg-3 mx-auto">
   <h1><%= @article.title %></h1>
   <p><%= @article.body %></p>
+
+  <ul>
+    <li><%= link_to "Edit", edit_article_path(@article) %>
+      <%= link_to "New Article", new_article_path %>
+    </li>
+  </ul>
+
 </div>
