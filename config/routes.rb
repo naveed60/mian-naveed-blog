@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get 'privacy_policy' => 'pages#privacy_policy'
   root 'home#index'
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 end
