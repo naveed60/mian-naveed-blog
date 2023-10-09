@@ -5,10 +5,8 @@
   overflow-x: hidden !important;
 }
 
-/* app/assets/stylesheets/custom.css */
-body {
-  background-image: url('/assets/bg1.jpg'); /* Replace 'background.jpg' with the actual filename of your background image */
+.custom-background {
+  background-image: url('/assets/images/bg1.jpg'); /* Replace 'background.jpg' with the actual filename of your background image */
   background-size: cover; /* Adjust the background size as needed */
-  background-position-x: left;
   background-repeat: no-repeat; /* Prevent the image from repeating */
 }
