@@ -1,0 +1,17 @@
+<div class= "col-lg-10 mx-auto">
+
+  <h1>Home</h1>
+    <% if user_signed_in? %>
+      Welcome, <%= current_user.email %> (User)
+      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+    <% elsif admin_signed_in? %>
+      Welcome, <%= current_admin.email %> (Admin)
+      <%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %>
+    <% else %>
+      <%= link_to 'Sign In (User)', new_user_session_path %> 
+      <%= link_to 'Sign In (Admin)', new_admin_session_path %>
+    <% end %>
+
+  
+  
+</div>
