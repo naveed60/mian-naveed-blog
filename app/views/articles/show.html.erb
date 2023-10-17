@@ -1,6 +1,7 @@
 <div class= "col-lg-10 mx-auto">
 <%= link_to 'Back', 'javascript:history.back()' %>
-
+  <%= image_tag @article.image, style: "border-radius: 10%; width:50%; margin-top:25px; height:20%;" if @article.image.attached? %>
+  
   <h1><%= @article.title %></h1>
   <p><%= @article.body %></p>
 
