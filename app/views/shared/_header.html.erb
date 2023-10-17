@@ -9,6 +9,8 @@
         <li class="nav-item">
           <%= link_to 'Blogs', articles_path ,class:'navbar-brand text-white'%>
           <%= link_to 'Latest News', articles_path ,class:'navbar-brand text-white'%>
+          <%= link_to "Add New Article", new_article_path ,class:'navbar-brand text-white' %>
+
 
         </li>
       <% if user_signed_in? %>
@@ -18,9 +20,9 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item " href="#">Signed in As<%= current_user.email%></a></li>
-            <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete ,class: 'dropdown-item'%></li>
-            <li><hr class="dropdown-divider"></li>
             <li><%= link_to 'Edit Profile', edit_user_registration_path , class:'dropdown-item' %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete ,class: 'dropdown-item'%></li>
           </ul>
         </li>
       </ul>
